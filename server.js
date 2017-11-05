@@ -3,7 +3,16 @@ const app = express();
 const bodyParser = require('body-parser');
 // logging framework
 const morgan = require('morgan');
+const cors = require('cors');
+
 const PORT = 7777;
+
+// ONLY FOR DEVELOPMENT
+// allow CORS
+app.use(cors({
+	origin: `http://localhost:3000`
+}));
+
 const workoutRoutes = require('./routes/workouts');
 const userRoutes = require('./routes/users');
 
