@@ -8,11 +8,11 @@ const jwt = require('jsonwebtoken');
 /**
  * get all users
  */
-router.get('/', (req, res) => {
-	DB.User.find()
-		.then(users => res.json({ success: true, message: users }))
-		.catch(errHandler);
-})
+// router.get('/', (req, res) => {
+// 	DB.User.find()
+// 		.then(users => res.json({ success: true, message: users }))
+// 		.catch(errHandler);
+// })
 
 /**
  * create a user
