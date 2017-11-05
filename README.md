@@ -1,2 +1,1 @@
-# webdev-boilerplate
-simple express server for local development
+# Backend for fitenss app

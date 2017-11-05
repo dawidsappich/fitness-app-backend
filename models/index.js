@@ -7,3 +7,4 @@ mongoose.connect('mongodb://dawid:rhqaprtksxX4@localhost/fitnessapp', { useMongo
 mongoose.Promise = global.Promise;
 
 module.exports.Workout = require('./workout');
+module.exports.User = require('./user');
