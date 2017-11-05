@@ -34,7 +34,7 @@ router.post('/login', (req, res) => {
 	DB.User.findOne({ email: req.body.email })
 		.then(user => {
 			if (!user) {
-				res.json('no user found')
+				res.json({ success: false, message: `no user ${req.body.email} found` })
 			} else {
 				// compare hashed password
 				const isValidPassword = user.comparePassword(req.body.password);
