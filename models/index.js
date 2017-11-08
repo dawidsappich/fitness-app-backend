@@ -8,3 +8,4 @@ mongoose.Promise = global.Promise;
 
 module.exports.Workout = require('./workout');
 module.exports.User = require('./user');
+module.exports.Meal = require('./meal');
